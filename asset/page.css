@@ -30,3 +30,21 @@ body, html {
   width: 100%;
   background-size: 100%;
   }
+.jetonSize{
+  width: 70px;
+  height: auto;
+}
+.colSize{
+  width: 100px;
+  height: 100px;
+}
+@media only screen and (max-width: 600px) {
+  .colSize {
+    width: 50px;
+    height: 50px;
+  }
+  .jetonSize{
+    width: 40px;
+    height: auto;
+  }
+}

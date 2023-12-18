@@ -55,11 +55,11 @@ function initialisationTableau() {
     finDuJeu = false;
     joueurEnCours = 1;
     alerteFinDeJeu.classList.add("d-none");
-    let contentJ1 = "<img src='./asset/img/J1jeton.png'/><br>";
+    let contentJ1 = "<img src='./asset/img/J1jeton.png' alt='button J1' class='jetonSize'><br>";
     contentJ1 += pointJ1;
     j1.innerHTML = contentJ1;
 
-    let contentJ2 = "<img src='./asset/img/J2jeton.png'/><br>";
+    let contentJ2 = "<img src='./asset/img/J2jeton.png' alt='button j2' class='jetonSize'><br>";
     contentJ2 += pointJ2;
     j2.innerHTML = contentJ2;
 
@@ -79,73 +79,3 @@ function gererFinDuJeu() {
         pointJ2++;
     }
 }
-
-
-
-
-/*function joueurVainqueur(joueur) {
-    alerteFinDeJeu.innerHTML = Swal.fire({
-        title: 'Bravo',
-        text: 'Le joueur ' + joueur + ' a gagné.',
-        imageUrl: 'asset/img/emojiBravo.png',
-        imageWidth: 300,
-        imageHeight: 200,
-        imageAlt: 'Custom image',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Recommencer'
-      }).then((result) => {
-        if (result.isConfirmed) {
-            initialisationTableau()
-        }
-      })
-};*/
-
-/*var toolbox = require('./toolbox.js');
-var jeu = require('./jeu.js');*/
-
-//introduction();
-/*jeu.joueur1 = choixCaractere(1);
-jeu.joueur2 = choixCaractere(2);*/
-
-/*while (true) {
-    if (jouer(1)) {
-        console.log("Joueur 1 a gagné");
-        return;
-    }
-    if (jouer(2)) {
-        console.log("Joueur 2 a gagné");
-        return;
-    }
-}*/
-/*
-function introduction () {
-    let txt = "------------------------------------------------------------------------------------------\n";
-    txt += "-------------------------------Bienvenue dans alignes En 4.-------------------------------\n";
-    txt += "------------------------------------------------------------------------------------------";
-    console.log(txt);
-}
-function choixCaractere(joueur) {
-    var txt = "Veuillez choisir le caractere que vous voulez pour le joueur " + joueur + " : ";
-    return toolbox.saisieString(txt);
-}
-*/
-
-
-    /*let ligneVide = -1;
-    let colonne = -1;
-    while (ligneVide === -1 ||colonne <=0 || colonne >7) {
-        console.log("Choisir une colonne vide.");
-        colonne = jeu.saisirColonne();
-        ligneVide = jeu.trouverLigneVideSelonColonneSaisie(colonne);
-    }
-    jeu.jouerCase(joueur, ligneVide, colonne);
-    jeu.afficherAlignesEn4();
-    return jeu.verificationFinDeJeu(joueur);*/
-
-
-
-
-
-

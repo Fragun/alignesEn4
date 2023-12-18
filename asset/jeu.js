@@ -15,20 +15,19 @@ var jeu = {
      */
     afficherAlignesEn4 : function() {
         const jeu = document.querySelector('#jeu');
-        console.log(jeu);
         jeu.innerHTML = '';
 
         let content = "<table class='justify-content-center bg-black'>";
             for(let i=0; i < this.nombreLigne;i++){
                 content += "<tr>";
                 for(let j=0; j< this.nombreColonne;j++){
-                    content += "<td class='border text-center' style='width:100px; height:100px'>";
+                    content += "<td class='border text-center colSize'>";
                     if(this.alignesEn4[i][j]=== 0){
                         content += "";
                     }else if(this.alignesEn4[i][j]=== 1){
-                        content += "<img src='./asset/img/J1.png'/>";
+                        content += "<img src='./asset/img/J1.png' class='jetonSize' alt='j1 jeton'/>";
                     }else if(this.alignesEn4[i][j]=== 2){
-                        content += "<img src='./asset/img/J2.png'/>";
+                        content += "<img src='./asset/img/J2.png' class='jetonSize' alt='j2 jeton'/>";
                     }
                     content += "</td>";
                 }
