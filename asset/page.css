@@ -1,0 +1,32 @@
+.bordureFond{
+  background-color: #d1e6f7a8;
+  border-radius: 3em;
+}
+
+.styleTitre{
+  font-family: 'Monofett', cursive,'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+}
+.styleTitre2{
+  font-family: 'Monofett', cursive,'Times New Roman', Times, serif;
+  font-size: 1.3rem;
+}
+
+.stylePolice {
+  color: #21262b;
+  padding-top: 0.3em;
+  font-weight: lighter;
+  font-family:cursive, 'Times New Roman', Times, serif;
+  font-size: 2.1rem;
+}
+
+header {
+  background-color: #6eafec;
+  border-radius: 3em;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  background-size: 100%;
+  }
